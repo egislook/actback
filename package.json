@@ -1,6 +1,6 @@
 {
   "name": "actback",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "helpers for backends based on act method",
   "main": "index.js",
   "scripts": {
