@@ -1,0 +1,21 @@
+{
+  "name": "actback",
+  "version": "0.0.0",
+  "description": "helpers for backends based on act method",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "act",
+    "node",
+    "backend",
+    "helpers",
+    "utils"
+  ],
+  "author": "egislook",
+  "license": "ISC",
+  "dependencies": {
+    "fetchier": "^0.0.36"
+  }
+}
