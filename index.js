@@ -1,5 +1,9 @@
 const fetchier = require('fetchier')
 const qs = require('qs')
+const fs = require('fs')
+const cfgPath = process.cwd() + '/config.js'
+
+const { URL, GQL_URL, TOKEN, HEADERS } = fs.existsSync(cfgPath) ? require(cfgPath) : {}
 
 module.exports.success = success
 module.exports.fail = fail
@@ -7,8 +11,6 @@ module.exports.result = result
 module.exports.parse = parse
 module.exports.act = act
 module.exports.fetch = fetchier.fetch
-
-const { URL, GQL_URL, TOKEN, HEADERS } = require(process.cwd() + '/config.js') || {}
 
 function act(action, request = {}) {
   const { token, path = '', headers, ...rest } = request
